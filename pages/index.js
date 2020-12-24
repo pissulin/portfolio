@@ -1,9 +1,12 @@
 import Head from 'next/head';
 import React from 'react';
 import Image from 'next/image';
-import Menu from '../components/Menu'
+import Menu from '../components/Menu';
+import Social from '../components/Social';
 import styled from 'styled-components';
-import ReactTypingEffect from 'react-typing-effect';
+import ReactTypingEffect from 'react-typing-effect'; 
+
+
 
 const Container = styled.div`
   display: flex;
@@ -24,25 +27,50 @@ const NavBar = styled.div`
   justify-content: flex-start;
   border-radius: 15px;
   background: rgba( 255, 255, 255, 0.25 );
-  backdrop-filter: blur( 15px );
-  -webkit-backdrop-filter: blur( 15px );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur(4px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.28 );
 `;
 
 const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   width: 80%;
   height: 90%;
   margin: 0 30px 0 20px;
   border-radius: 15px;
   background: rgba( 255, 255, 255, 0.25 );
-  backdrop-filter: blur( 15px );
-  -webkit-backdrop-filter: blur( 15px );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
   border-radius: 7px;
   border: 1px solid rgba( 255, 255, 255, 0.28 );
   
+  mark{
+    color: inherit;
+    padding: 0;
+    background: 0 0;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-repeat: repeat;
+    background-size: auto;
+    background-image: linear-gradient(120deg,rgb(108, 122, 245) 0,rgb(108, 172, 245) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% .27em;
+    background-position: 0 70%;
+    position: relative;
+    
+}
+
+  h1{
+    color: black;
+  }
   .typingeffect{
-    color: white;
+    color: black;
+    font-size: 50px;
+    margin-bottom: 200px;
   }
 `;
 
@@ -53,7 +81,9 @@ export default function Home() {
         <Menu />
       </NavBar>
       <Content>
-      <ReactTypingEffect className="typingeffect" text={['Desenvolvo sites','Desenvolvo Aplicativos','Desenvolvo automações']} speed={50} eraseDelay={900}/>
+        <h1>Bem vindo ao <mark>meu site</mark></h1>
+      <ReactTypingEffect className="typingeffect" text={['Desenvolvo sites','Desenvolvo Aplicativos','Desenvolvo automações']} speed={100} eraseDelay={900}/>
+      <Social />
       </Content>
     </Container>
   )
