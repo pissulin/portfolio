@@ -3,7 +3,6 @@ import React from 'react';
 import Image from 'next/image';
 import Menu from '../components/Menu'
 import styled from 'styled-components';
-import ReactTypingEffect from 'react-typing-effect';
 
 const Container = styled.div`
   display: flex;
@@ -40,20 +39,16 @@ const Content = styled.div`
   -webkit-backdrop-filter: blur( 15px );
   border-radius: 7px;
   border: 1px solid rgba( 255, 255, 255, 0.28 );
-  
-  .typingeffect{
-    color: white;
-  }
 `;
 
 export default function Home() {
   return (
     <Container>
       <NavBar>
-        <Menu />
+      <Menu />
       </NavBar>
       <Content>
-      <ReactTypingEffect className="typingeffect" text={['Desenvolvo sites','Desenvolvo Aplicativos','Desenvolvo automações']} speed={50} eraseDelay={900}/>
+
       </Content>
     </Container>
   )
