@@ -22,8 +22,8 @@ const NavBar = styled.div`
   justify-content: flex-start;
   border-radius: 15px;
   background: rgba( 255, 255, 255, 0.25 );
-  backdrop-filter: blur( 15px );
-  -webkit-backdrop-filter: blur( 15px );
+  backdrop-filter: blur( 7px );
+  -webkit-backdrop-filter: blur( 7px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.28 );
 `;
