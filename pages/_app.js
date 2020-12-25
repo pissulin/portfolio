@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styled,{ createGlobalStyle, ThemeProvider } from 'styled-components'
-import { FaMoon, FaSun } from 'react-icons/fa';
+import { FaMoon, FaSun, FaHeart } from 'react-icons/fa';
 
 const GlobalStyle = createGlobalStyle`
 html,
@@ -43,6 +43,23 @@ const Div = styled.div`
 
 `;
 
+const Footer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  width: 100vw;
+  height: 42px;
+  bottom: 0;
+  & span{
+    margin: 0 3px;
+  }
+`;
+
 
 export default function App({ Component, pageProps }) {
   const [theme, setTheme] = useState({ mode: 'light'});
@@ -54,7 +71,9 @@ export default function App({ Component, pageProps }) {
         <Div  onClick={e => setTheme(
       theme.mode === 'dark' ? {mode: 'light'} : {mode: 'dark'}
     )}>{theme.mode === 'dark' ? <FaSun size={32} color={'yellow'}/> : <FaMoon size={32} color={'rgb(61, 61, 61)'}/>}</Div>
-    
+    <Footer>
+          <p>Feito com <span><FaHeart  size={16} color={'red'}/></span> por Anderson Pissulin</p>
+    </Footer>
     
     </>
       </ThemeProvider>

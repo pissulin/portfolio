@@ -4,5 +4,6 @@ head{
     text-decoration: none;
     background-repeat: no-repeat;
    
-    
+    display:  flex;
+    justify-content: baseline;
 }
