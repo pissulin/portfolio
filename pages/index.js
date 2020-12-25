@@ -4,8 +4,8 @@ import Image from 'next/image';
 import Menu from '../components/Menu';
 import Social from '../components/Social';
 import styled from 'styled-components';
-import ReactTypingEffect from 'react-typing-effect'; 
-
+//import ReactTypingEffect from 'react-typing-effect'; 
+import Typewriter from 'typewriter-effect';
 
 
 const Container = styled.div`
@@ -82,7 +82,14 @@ export default function Home() {
       </NavBar>
       <Content>
         <h1>Bem vindo ao <mark>meu site</mark></h1>
-      <ReactTypingEffect className="typingeffect" text={['Desenvolvo sites','Desenvolvo Aplicativos','Desenvolvo automações']} speed={100} eraseDelay={900}/>
+        <Typewriter
+          options={{
+            strings: ['Desenvolvo sites','Desenvolvo Aplicativos','Desenvolvo automações'],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      
       <Social />
       </Content>
     </Container>
