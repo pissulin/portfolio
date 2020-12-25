@@ -76,6 +76,10 @@ const Content = styled.div`
 export default function Home() {
   return (
     <Container>
+      <Head>
+        <title>Dev Pissulin</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <NavBar>
         <Menu />
       </NavBar>

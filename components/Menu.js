@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
-import Image from 'next/image';
+
 
 
 const ContainerMenu = styled.div`
@@ -25,9 +25,10 @@ const ContainerMenu = styled.div`
         background-color:  rgba(255, 255, 255, 0.252);
     }
 
-    .imageFoto{
+    .fotoPerfil{
+        width: 150px;
         border-radius: 50%;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
     h1{
         margin: 20px 10px 0px 10px;
@@ -63,13 +64,7 @@ const Menu = (props) => {
 
     return (
         <ContainerMenu>
-            <Image
-                className='imageFoto'
-                src={'/../public/profilePhoto.jpg'}
-                alt="Foto do dev"
-                width={150}
-                height={150}
-            />
+            <img src={'/profilePhoto.jpg'} alt={'Foto do dev'}  className="fotoPerfil"/>
              <h1>Anderson <mark>Pissulin</mark></h1>
              <h2>Full Stack Developer Jr</h2>
             
