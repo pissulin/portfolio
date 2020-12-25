@@ -31,16 +31,16 @@ export default ()=> {
 
         <ContainerSocial>
             <Link className="hove" href= "https://github.com/pissulin">
-                <a target='_blank' rel="noopener noreferrer"> <FaGithub size={30}/></a>
+                <a target='_blank' rel="noopener noreferrer"> <FaGithub size={30} color={'black'}/></a>
             </Link>
             <Link href= "https://www.linkedin.com/in/pissulin/">
-                <a target='_blank' rel="noopener noreferrer"> <FaLinkedinIn size={30}/></a>
+                <a target='_blank' rel="noopener noreferrer"> <FaLinkedinIn size={30} color={'black'}/></a>
             </Link>
             <Link href= "https://www.instagram.com/a.pissulin">
-                <a target='_blank' rel="noopener noreferrer"> <FaInstagram size={30}/></a>
+                <a target='_blank' rel="noopener noreferrer"> <FaInstagram size={30} color={'black'}/></a>
             </Link>
             <Link href= "https://encurtador.com.br/xBCMS">
-                <a target='_blank' rel="noopener noreferrer"> <FaWhatsapp size={30}/></a>
+                <a target='_blank' rel="noopener noreferrer"> <FaWhatsapp size={30} color={'black'}/></a>
             </Link>
         
         </ContainerSocial>

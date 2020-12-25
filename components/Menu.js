@@ -20,6 +20,7 @@ const ContainerMenu = styled.div`
         padding: 10px 0 ;
         text-align: center;
         border-radius: 5px;
+        text-decoration: none;
     }
     a:hover{
         background-color:  rgba(255, 255, 255, 0.252);
@@ -65,7 +66,7 @@ const Menu = (props) => {
         <ContainerMenu>
             <Image
                 className='imageFoto'
-                src={'/../public/profile_photo.jpg'}
+                src={'/../public/profilePhoto.jpg'}
                 alt="Foto do dev"
                 width={150}
                 height={150}
