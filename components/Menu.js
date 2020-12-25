@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 
+
 const ContainerMenu = styled.div`
     display: flex;
     flex-direction: column;
@@ -64,7 +65,7 @@ const Menu = (props) => {
         <ContainerMenu>
             <Image
                 className='imageFoto'
-                src={'/../public/static/profile_photo.jpg'}
+                src={'/../public/profile_photo.jpg'}
                 alt="Foto do dev"
                 width={150}
                 height={150}
