@@ -67,7 +67,7 @@ const Content = styled.div`
   h1{
     color: black;
   }
-  .typingeffect{
+  .Typewriter{
     color: black;
     font-size: 50px;
     margin-bottom: 200px;
@@ -83,6 +83,7 @@ export default function Home() {
       <Content>
         <h1>Bem vindo ao <mark>meu site</mark></h1>
         <Typewriter
+        	
           options={{
             strings: ['Desenvolvo sites','Desenvolvo Aplicativos','Desenvolvo automações'],
             autoStart: true,
