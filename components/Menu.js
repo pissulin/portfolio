@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 
-
 const ContainerMenu = styled.div`
     display: flex;
     flex-direction: column;
