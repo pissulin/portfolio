@@ -9,7 +9,7 @@ const Container = styled.div`
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1570864977367-42d70041a3c1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80');
+
 
 `;
 
