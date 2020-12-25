@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import React from 'react';
-import Image from 'next/image';
 import Menu from '../components/Menu';
 import Social from '../components/Social';
 import styled from 'styled-components';
