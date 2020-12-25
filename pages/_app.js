@@ -53,7 +53,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
         <Div  onClick={e => setTheme(
       theme.mode === 'dark' ? {mode: 'light'} : {mode: 'dark'}
-    )}>{theme.mode === 'dark' ? <FaMoon size={32} color={'white'}/> : <FaSun size={32} color={'yellow'}/>}</Div>
+    )}>{theme.mode === 'dark' ? <FaSun size={32} color={'yellow'}/> : <FaMoon size={32} color={'rgb(61, 61, 61)'}/>}</Div>
     
     
     </>
