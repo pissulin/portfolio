@@ -88,7 +88,7 @@ export default function Home() {
         <Typewriter
         	
           options={{
-            strings: ['Desenvolvo sites','Desenvolvo Aplicativos','Desenvolvo automações'],
+            strings: ['Desenvolvedor de sites','Desenvolvedor de Aplicativos','Desenvolvedor de automações'],
             autoStart: true,
             loop: true,
           }}
